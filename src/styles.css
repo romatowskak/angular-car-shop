@@ -1,0 +1,22 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+    padding: 120px;
+    color: #575353;
+    font-family: "Arvo";
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    color: #575353;
+    font-weight: bold;
+}
+
+a:hover {
+    color: dodgerblue;
+    text-decoration: none;
+}

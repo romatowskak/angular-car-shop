@@ -1,0 +1,40 @@
+<div class="displayTable">
+    <div class="displayTableCell">
+        <div class="authBlock">
+            <h3>SIGN UP</h3>
+
+            <div class="formGroup">
+                <input type="email" class="formControl" placeholder="Email Address" #userEmail required />
+            </div>
+
+            <div class="formGroup">
+                <input type="password" class="formControl" placeholder="Password" #userPwd required />
+            </div>
+
+            <div class="formGroup">
+                <button class="btn btn-primary" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+          SIGN UP
+        </button>
+            </div>
+
+            <div class="formGroup">
+                <span class="or"><span class="orInner">OR</span></span>
+            </div>
+
+            <!-- Continue with Google -->
+            <div class="formGroup">
+                <button class="btn btn-primary" (click)="authService.GoogleAuth()">
+          CONTINUE WITH GOOGLE
+        </button>
+            </div>
+        </div>
+
+        <div class="redirectToLogin">
+            <span>ALREADY HAVE AN ACCOUNT?
+        <span id="login" class="redirect" routerLink="/signin"
+          >LOG IN</span
+        ></span
+      >
+    </div>
+  </div>
+</div>

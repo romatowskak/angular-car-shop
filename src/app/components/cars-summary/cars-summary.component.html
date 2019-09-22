@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                Gotowe do sprzedaży
+                <div class="float-right" *ngFor="let value of filterReadyForSell(cars)">
+                    {{value}}
+                </div>
+            </li>
+            <li class="list-group-item">
+                Zarezerwowane
+                <div class="float-right" *ngFor="let value of filterReserved(cars)">
+                    {{value}}
+                </div>
+            </li>
+            <li class="list-group-item">
+                Sprzedane
+                <div class="float-right" *ngFor="let value of filterSold(cars)">
+                    {{value}}
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+</div>

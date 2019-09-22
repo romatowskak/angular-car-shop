@@ -1,0 +1,42 @@
+input {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: "Arvo";
+    font-size: 16px;
+    color: #575353;
+    height: 50px;
+    width: 250px;
+    padding: 10px 0px;
+    outline: none;
+    box-shadow: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #575353;
+}
+
+input::-webkit-input-placeholder {
+    color: #575353;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: dodgerblue;
+}
+
+button {
+    margin: 7px;
+    background-color: dodgerblue;
+    font-size: 16px;
+    font-family: "Arvo";
+}
+
+#signup {
+    font-weight: bold;
+}

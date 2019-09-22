@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto first">
+                <li class="nav-item">
+                    <a id="home" class="nav-link" routerLink="/home">Log In</a>
+                </li>
+                <li ngbDropdown class="nav-item dropdown">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle show" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a
+          >
+          <div
+            ngbDropdownMenu
+            class="dropdown-menu show"
+            aria-labelledby="dropdown01"
+          >
+            <a class="dropdown-item" routerLink="/cars-list">Cars</a>
+                    <a (click)="authService.SignOut()" class="dropdown-item">Log Out</a>
+        </div>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
